@@ -5,40 +5,50 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #eed0b3;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+
+
+header {
+    background: url("https://t4.ftcdn.net/jpg/02/55/17/43/360_F_255174366_ojDuATz84e5h7lIlxh2moUJa9Kpd5wKk.jpg") no-repeat center center fixed;
+    /* <!-- Image pulled from https://www.google.com/search?sca_esv=568551326&rlz=1C1VDKB_enUS1074US1074&sxsrf=AM9HkKlWnQFDUShvM2qgWyNnijn2opHy7Q:1695755009885&q=forest+image&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj60_XX-8iBAxXNlGoFHXhQC0oQ0pQJegQICxAB&biw=1810&bih=941&dpr=1#imgrc=tA_mYXzeCzAkgM --> */
+    background-size:cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: #dedede;
 }
 
-.header h1 {
+
+header h1 {
     display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+header h2 {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 35px;
 }
 
-.header div {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: black;
 }
 
-.header div ul {
-    list-style-type: none;
-}
 
-.header div ul li {
+nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    list-style-type: none;
+    margin-right: 25px;
 }
 
 a {
@@ -47,7 +57,8 @@ a {
 }
 
 p {
-    font-size: 16px;
+    flex-wrap: wrap;
+    font-size: 22px;
 }
 
 .hero {
@@ -75,66 +86,29 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+
+
+.classcards {
+   display: grid;
+   grid-template-columns: repeat(auto-fill);
+   grid-gap: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transition: 0.3s;
+   
+
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+.card {
+    display: flex;
+    
+
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+.classcards:hover {
+
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.Projects {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
